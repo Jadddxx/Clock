@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(88, 126, 88);
+}
+
+.clock {
+  margin: 16% auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.clock-face {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: rgb(88, 126, 88);
+}
+
+.circle {
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  left: 46%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transform-origin: center;
+  background-color: rgb(59, 48, 48);
+  box-shadow: 4px 0 10px -3px #8d8b8b;
+}
+
+.hand {
+  position: absolute;
+  transition: all 0.07s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hours {
+  top: 137px;
+  left: 44px;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(252, 79, 157);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+.minutes {
+  top: 50%;
+  left: 10px;
+  width: 130px;
+  height: 3px;
+  background-color: rgb(254, 152, 28);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+.seconds {
+  top: 50%;
+  left: 10px;
+  width: 130px;
+  height: 3px;
+  background-color: rgb(252, 252, 13);
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=style.css.map */
